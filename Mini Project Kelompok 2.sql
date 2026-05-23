@@ -42,7 +42,7 @@ GROUP BY "Name", "Genre"
 ORDER BY total_eu_sales DESC
 LIMIT 10;
 
---6. Tampilkan 10 video game yang terbanyak terjual di wilayah Amerika Utara berdasarkan nama dan genre
+--6. Tampilkan 10 video game yang terbanyak terjual di wilayah Jepang berdasarkan nama dan genre
 SELECT 
     "Name", "Genre", 
     SUM("JP_Sales (millions_copy)") AS total_jp_sales
