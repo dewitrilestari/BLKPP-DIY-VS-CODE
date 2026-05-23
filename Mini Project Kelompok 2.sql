@@ -9,10 +9,11 @@ LIMIT 10;
 --2. Tampilkan 10 platfrom yang paling banyak digunakan
 SELECT 
     "Platform", 
-    COUNT(DISTINCT "Name") AS jumlah_judul_game
+    COUNT(DISTINCT "Name") AS "Jumlah_Video_Game",
+    SUM("Global_Sales (millions_copy)") AS "Total_Global_Sales"
 FROM public.vgsales_clean
 GROUP BY "Platform"
-ORDER BY jumlah_judul_game DESC
+ORDER BY "Total_Global_Sales" DESC
 LIMIT 10;
 
 --3. Tampilkan berapa banyak video game di setiap genre
