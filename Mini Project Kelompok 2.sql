@@ -6,7 +6,7 @@ GROUP BY "Name", "Genre", "Publisher"
 ORDER BY Total_Global_Sales DESC
 LIMIT 10;
 
---2. Tampilkan 10 platfrom yang paling banyak digunakan
+--2. Tampilkan 10 platfrom beradasarkan banyaknya video game di platform tersebut dan total penjualan terbanyak
 SELECT 
     "Platform", 
     COUNT(DISTINCT "Name") AS "Jumlah_Video_Game",
